@@ -3,8 +3,7 @@
   position: relative;
 }
 
-html,
-body {
+html, body {
   padding: 0px;
   margin: 0px;
 }
@@ -17,7 +16,7 @@ body {
 
 .header {
   height: 300px;
-  background-color: #f2e503;
+  background-color: #F2E503;
 }
 .header .icon {
   width: 400px;
@@ -28,16 +27,16 @@ body {
 }
 
 .content {
-  font-family: 'Fjalla One', 微軟正黑體;
+  font-family: "Fjalla One", 微軟正黑體;
   padding: 50px;
 }
 .content h5 {
   margin-top: 10px;
 }
 .content .title_hr {
-  border: solid 3px #f2e503;
+  border: solid 3px #F2E503;
   width: 100px;
-  color: #f2e503;
+  color: #F2E503;
 }
 .content h1 {
   font-size: 40px;
@@ -70,65 +69,60 @@ body {
   letter-spacing: 2px;
   font-size: 15px;
   font-weight: bold;
-  border: solid 2px #4c549c;
-  background-color: #fc2b46;
+  border: solid 2px #4C549C;
+  background-color: #FC2B46;
   color: #f3f7f7;
 }
 .content .button_blue {
-  background-color: #4c549c;
+  background-color: #4C549C;
   color: #f3f7f7;
   font-weight: 500;
 }
 .content .button_yellow {
-  background-color: #f2e503;
-  color: #4c549c;
+  background-color: #F2E503;
+  color: #4C549C;
 }
 .content .button_white {
   background-color: #f3f7f7;
-  color: #4c549c;
+  color: #4C549C;
 }
 .content .color_chip {
   display: inline-block;
-  margin-right: 15px;
+  margin-right: 25px;
 }
-.content .color_chip .color_block,
-.content .color_chip .color_tag {
+.content .color_chip .color_block, .content .color_chip .color_tag {
   display: inline-block;
   vertical-align: middle;
   text-align: center;
-}
-.content .color_chip .color_tag {
-  width: 70px;
-  margin-right: 15px;
-}
-.content .color_chip .color_block {
   width: 50px;
   height: 50px;
   border: solid 2px white;
 }
-.content .color_chip .color_block_yellow {
-  background-color: #f2e503;
+.content .color_chip .color_block .color_tag, .content .color_chip .color_tag .color_tag {
+  width: 60px;
+  margin-right: 20px;
 }
-.content .color_chip .color_block_blue {
-  background-color: #4c549c;
+.content .color_chip .color_block .color_block_yellow, .content .color_chip .color_tag .color_block_yellow {
+  background-color: #F2E503;
 }
-.content .color_chip .color_block_white {
+.content .color_chip .color_block .color_block_blue, .content .color_chip .color_tag .color_block_blue {
+  background-color: #4C549C;
+}
+.content .color_chip .color_block .color_block_white, .content .color_chip .color_tag .color_block_white {
   background-color: #f3f7f7;
 }
-.content .color_chip .color_block_red {
-  background-color: #fc2b46;
+.content .color_chip .color_block .color_block_red, .content .color_chip .color_tag .color_block_red {
+  background-color: #FC2B46;
 }
 
 .content_red {
-  background-color: #fc2b46;
+  background-color: #FC2B46;
   color: #f3f7f7;
 }
 .content_red .small_english {
-  color: #f2e503;
+  color: #F2E503;
 }
-.content_red h1,
-.content_red h2,
-.content_red h3 {
+.content_red h1, .content_red h2, .content_red h3 {
   font-weight: 500;
 }
 .content_red .button {
@@ -136,15 +130,13 @@ body {
 }
 
 .content_blue {
-  background-color: #4c549c;
+  background-color: #4C549C;
   color: #f3f7f7;
 }
 .content_blue .small_english {
-  color: #f2e503;
+  color: #F2E503;
 }
-.content_blue h1,
-.content_blue h2,
-.content_blue h3 {
+.content_blue h1, .content_blue h2, .content_blue h3 {
   font-weight: 500;
 }
 .content_blue .button {
@@ -153,8 +145,8 @@ body {
 
 .content_white {
   background-color: #f3f7f7;
-  color: #4c549c;
+  color: #4C549C;
 }
 .content_white .small_english {
-  color: #4c549c;
-}
+  color: #4C549C;
+}/*# sourceMappingURL=style.css.map */
