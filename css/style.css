@@ -1,0 +1,160 @@
+@charset "UTF-8";
+* {
+  position: relative;
+}
+
+html,
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
+.max_width {
+  max-width: 768px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.header {
+  height: 300px;
+  background-color: #f2e503;
+}
+.header .icon {
+  width: 400px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.content {
+  font-family: 'Fjalla One', 微軟正黑體;
+  padding: 50px;
+}
+.content h5 {
+  margin-top: 10px;
+}
+.content .title_hr {
+  border: solid 3px #f2e503;
+  width: 100px;
+  color: #f2e503;
+}
+.content h1 {
+  font-size: 40px;
+}
+.content h2 {
+  font-size: 30px;
+}
+.content h3 {
+  font-size: 20px;
+}
+.content h1.small_english {
+  font-size: 24px;
+  line-height: 40px;
+}
+.content h2.small_english {
+  font-size: 16px;
+  line-height: 40px;
+}
+.content h3.small_english {
+  font-size: 12px;
+  line-height: 40px;
+}
+.content .small_english {
+  margin-top: -15px;
+}
+.content .button {
+  padding: 5px 25px;
+  display: inline-block;
+  margin-right: 10px;
+  letter-spacing: 2px;
+  font-size: 15px;
+  font-weight: bold;
+  border: solid 2px #4c549c;
+  background-color: #fc2b46;
+  color: #f3f7f7;
+}
+.content .button_blue {
+  background-color: #4c549c;
+  color: #f3f7f7;
+  font-weight: 500;
+}
+.content .button_yellow {
+  background-color: #f2e503;
+  color: #4c549c;
+}
+.content .button_white {
+  background-color: #f3f7f7;
+  color: #4c549c;
+}
+.content .color_chip {
+  display: inline-block;
+  margin-right: 15px;
+}
+.content .color_chip .color_block,
+.content .color_chip .color_tag {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+}
+.content .color_chip .color_tag {
+  width: 70px;
+  margin-right: 15px;
+}
+.content .color_chip .color_block {
+  width: 50px;
+  height: 50px;
+  border: solid 2px white;
+}
+.content .color_chip .color_block_yellow {
+  background-color: #f2e503;
+}
+.content .color_chip .color_block_blue {
+  background-color: #4c549c;
+}
+.content .color_chip .color_block_white {
+  background-color: #f3f7f7;
+}
+.content .color_chip .color_block_red {
+  background-color: #fc2b46;
+}
+
+.content_red {
+  background-color: #fc2b46;
+  color: #f3f7f7;
+}
+.content_red .small_english {
+  color: #f2e503;
+}
+.content_red h1,
+.content_red h2,
+.content_red h3 {
+  font-weight: 500;
+}
+.content_red .button {
+  border-color: #f3f7f7;
+}
+
+.content_blue {
+  background-color: #4c549c;
+  color: #f3f7f7;
+}
+.content_blue .small_english {
+  color: #f2e503;
+}
+.content_blue h1,
+.content_blue h2,
+.content_blue h3 {
+  font-weight: 500;
+}
+.content_blue .button {
+  border-color: #f3f7f7;
+}
+
+.content_white {
+  background-color: #f3f7f7;
+  color: #4c549c;
+}
+.content_white .small_english {
+  color: #4c549c;
+}
