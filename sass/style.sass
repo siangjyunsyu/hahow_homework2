@@ -1,0 +1,139 @@
+$color_yellow: #F2E503
+$color_blue: #4C549C
+$color_white: #f3f7f7
+$color_red: #FC2B46
+
+$font_base_size: 10px
+
+$max_content_width: 768px
+
+*
+  // border: solid 1px
+  // position: static 代表瀏覽器自動定位 不能調整位置
+  position: relative
+  // 代表可以針對瀏覽器自動排列的位置給一個相對位置
+
+@mixin size($w,$h)
+  width: $w
+  height: $h
+
+html,body
+  padding: 0px
+  margin: 0px
+
+.max_width
+  max-width: $max_content_width
+  margin-right: auto
+  margin-left: auto
+
+.header
+  height: 300px
+  background-color: $color_yellow
+
+  & .icon
+    width: 400px
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translateX(-50%) translateY(-50%)
+
+.content
+  font-family: 'Fjalla One',微軟正黑體
+  padding: 50px
+
+  // 使用 & 來代表上層符號
+  & h5
+    margin-top: 10px
+
+  & .title_hr
+    border: solid 3px $color_yellow
+    width: 100px
+    color: $color_yellow
+  & h1
+    font-size: $font_base_size*4 // 10*4 = 40px
+  & h2
+    font-size: $font_base_size*3 // 10*3 = 30px
+  & h3
+    font-size: $font_base_size*2 // 10*2 = 20px
+
+  & h1.small_english
+    font-size: $font_base_size*2.4 // 10*2.4 = 24px
+    line-height: 40px
+  & h2.small_english
+    font-size: $font_base_size*1.6 // 10*1.6 = 16px
+    line-height: 40px
+  & h3.small_english
+    font-size: $font_base_size*1.2 // 10*1.2 = 12px
+    line-height: 40px
+
+  & .small_english
+    margin-top: -15px
+
+  & .button
+    padding: 5px 25px
+    display: inline-block
+    margin-right: 10px
+    letter-spacing: 2px
+    font-size: $font_base_size*1.5
+    font-weight: bold
+    border: solid 2px $color_blue
+    background-color: $color_red
+    color: $color_white
+  & .button_blue
+    background-color: $color_blue
+    color: $color_white
+    font-weight: 500
+  & .button_yellow
+    background-color: $color_yellow
+    color: $color_blue
+  & .button_white
+    background-color: $color_white
+    color: $color_blue
+
+  & .color_chip
+    display: inline-block
+    margin-right: 25px
+    & .color_block,& .color_tag
+      display: inline-block
+      vertical-align: middle // 上下排列置中
+      text-align: center
+      & .color_tag
+        width: 60px
+        margin-right: 20px
+      & .color_block
+      +size(50px,50px)
+      border: solid 2px white
+      & .color_block_yellow
+        background-color: $color_yellow
+      & .color_block_blue
+        background-color: $color_blue
+      & .color_block_white
+        background-color: $color_white
+      & .color_block_red
+        background-color: $color_red
+
+.content_red
+  background-color: $color_red
+  color: $color_white
+  & .small_english
+    color: $color-yellow
+  & h1, h2, h3
+    font-weight: 500
+  & .button
+    border-color: $color_white
+
+.content_blue
+  background-color: $color_blue
+  color: $color_white
+  & .small_english
+    color: $color-yellow
+  & h1, h2, h3
+    font-weight: 500
+  & .button
+    border-color: $color_white
+
+.content_white
+  background-color: $color_white
+  color: $color_blue
+  & .small_english
+    color: $color-blue
